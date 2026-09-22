@@ -8,11 +8,12 @@
         body {
             margin: auto;
             background-color: white;
+            margin-left: 10px;
         }
         .container{
-            width: 1400px;
+            width: 1500px;
             margin: 25px auto;
-            border: 2px solid goldenrod;
+            border: 2px solid rgb(160, 59, 75);
             box-sizing: border-box;
             height: 900px;
         }
@@ -28,8 +29,9 @@
         .left-menu {
             width: 100%;
             height: 45px;
-            background-color: #ed9297;
+            background-color: #f7a1a6;
             box-sizing: border-box;
+            border-top: 2px solid rgb(160, 59, 75);
         }
 
         .menu-link {
@@ -40,14 +42,14 @@
             margin-left: 80px;
         }
         .menu-link a {
-            height: 20px;
-            line-height: 20px;
+            height: 30px;
+            line-height: 30px;
             color: white;
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
             text-decoration: none;
             padding: 0 40px;
-            border-right: 2px solid #c86b75;
+            border-right: 2px solid rgb(65, 4, 65);
             font-size: 15px;
         }
 
@@ -60,10 +62,11 @@
             height: 25px;
             vertical-align: middle;
            margin-top: -10px;
+           margin-right: -10px;
         }
         .menu-link input {
             width: 165px;
-            height 22px;
+            height: 22px;
             margin-left: 55px;
             box-sizing: border-box;
         }
@@ -88,7 +91,7 @@
             height: 30px;
             line-height: 30px;
             margin-bottom: 4px;
-            background-color: #ed9297;
+            background-color: pink;
             border-radius: 20px 20px;
             color: white;
             text-decoration: none;
@@ -106,6 +109,54 @@
             margin-left:-10px;
             box-shadow: 10px 20px 9px pink;
         }
+        .mid {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title{
+            width: 485px;
+            height: 37px;
+            line-height: 37px;
+            margin: 0 auto 5px auto;
+            background-color: pink;
+            color: #a52a2a;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 22px;
+            padding-left: 30px;
+            box-sizing: border-box;
+            position: relative;
+            left: 10px;
+            font-weight: bold;
+        }
+        ul{
+            margin-top: 0;
+            margin-bottom: 15px;
+            margin-right: -15px;
+            list-style-type: none;
+        }
+        li {
+            margin-left: -10px;
+            padding-left: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            margin-top: -5px;
+        }
+        li a {
+            color:#a52a2a;
+            font-weight: bold;
+        }
+      li::before {
+    content: "• ";
+    font-size: 20px;
+}
+.back-top {
+    color:  #a52a2a;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
     </style>
 </head>
 <body>
@@ -113,7 +164,7 @@
 <h1>EXAMPLE CAFE MENU</h1>
 <nav class="left-menu">
 <div class="menu-link">
-    <a href="https://bafi-tapj-3.vercel.app/" class="nav-home"><img src="https://cdn-icons-png.flaticon.com/128/101/101330.png" alt="Home"></a>
+    <a href="https://bafi-tapj-3.vercel.app/" class="nav-home"><img src="icons8-home-50.png" alt="Home"></a>
     <a href="https://minh-khang-portfolio-red-neon-3.vercel.app/">STARTER</a>
     <a href="/2 index.html">MAIN COURSES</a>
     <a href="/3 index.html">DESSERT</a>
@@ -128,8 +179,66 @@
     <a href="https://chonthieng.com/dia-diem/chua-bat-nha-binh-thanh-tp-ho-chi-minh/" target="_blank">Ice-cream Cafe</a>
     <a href="https://thisinh.thitotnghiepthpt.edu.vn/Account/Login" target="_blank">Order Online</a>
     <img src="company.png" alt="company">
-</div>
-</div>
+    </div>
+    <div class="mid">
+        <div class="title">Starter</div>
+        <ul>
+            <li>Chesnut and Mushroom Goujons<a href="#">.(v).</a></li>
+            <li>Goat Cheese<a href="#">.(v).</a></li>
+            <li>
+                <b style="color: goldenrod;">
+                    HONEY SOY CHICKEN KEBABS
+                </b><a href="#">.(V).</a>
+            </li>
+            <li>Seafood Salad<a href="#">.(v).</a></li>
+        </ul>
+        <a href="/index.html" class="back-top" style="margin-top: -20px;">Back to Top</a>
+    <div class="title" style="margin-top: -10px;">
+        Desserts
+    </div>
+    <ul>
+        <li>Lemon Sorbet<a href="#">.(v).</a></li>
+        <li>Chocolate Mud Pie<a href="#">.(v).</a></li>
+        <li>Pecan Pie<a href="#">.(v).</a></li>
+        <li>Selection of fine Cheese from Around the World<a href="#">.(v).</a></li>
+    </ul>
+    <a href="/index.html" class="back-top" style="margin-top: -20px;">Back to Top</a>
+    <div class="title" style="margin-top: -10px;">
+        Information
+    </div>
+        <table>
+            <tr>
+            <td><input type="text" class="first-name"></td>
+            <td><input type="text" class="last-name"></td>
+            </tr>
+            <tr>
+            <td><input type="text" class="email"></td>
+            <td><input type="text" class="telephone"></td>
+            </tr>
+            <tr>
+                <td><select class="Product-in" style="font-size: 20px; vertical-align: 11px; width: 178px;">
+                <option>USA</option>
+                <option>Chi tồi tệ</option>
+                <option>Nhi tồi tệ</option>
+                <option>Khang đẹp trai</option>
+            </select>
+            <td colspan="2">
+                <label>
+                    <input type="radio" name="used">Home
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="used">Business
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="used">Government
+                </label>
+            </td>
+            </tr>
+        </table>
+    </div>
+    </div>
 </div>
 </body>
 </html>
